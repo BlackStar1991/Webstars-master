@@ -5,15 +5,20 @@
   z-index: 8;
   right: 40px;
   margin: auto;
+  box-sizing: border-box;
   transform: translateY(-50%);
-  
+  @media screen  and (max-width: 1680px) {
+    transform: translateY(-42%);
+  }
+
+
   @media screen  and (max-width: $second-media) { 
     display: none;
   }
 }
 
 .anchor-aside__list {
-  font-size: 1rem;
+  font-size: 15px;
   counter-reset: anchor-count;
 }
 
@@ -74,7 +79,6 @@
   margin: auto;
   background: currentColor;
   border-radius: 4px;
-  margin-left: auto;
   opacity: 0;
   visibility: hidden;
   white-space: nowrap;
@@ -743,25 +747,25 @@ $mouse-anim: .5s;
 
 //.preloader 
 body {
-  overflow: hidden;
+  //overflow: hidden;
   
-  &.load {
-    overflow: visible;
-  }
+  //&.load {
+  //  overflow: visible;
+  //}
 }
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-}
+//.preloader {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  z-index: 999;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  height: 100%;
+//  width: 100%;
+//  background-color: #fff;
+//}
 
 
 
