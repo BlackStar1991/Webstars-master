@@ -154,21 +154,6 @@ $(document).ready(function () {
 });
 
 
-//preloader
-
-$(window).on('load', function () {
-    $('.preloader').fadeOut(500);
-
-    setTimeout(function () {
-        $('.top-section__desc, .main-title__ico, .scroll-mouse').addClass('active');
-    }, 500);
-
-
-    setTimeout(function () {
-        $('body').addClass('load');
-    }, 1500);
-});
-
 
 
 
