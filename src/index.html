@@ -12,15 +12,15 @@
     <script src="min-js/jquery.min.js"></script>
 
     <script>
-        $(window).on('load', function () {
-            $('.preloader').fadeOut(500);
-            setTimeout(function () {
-                $('.top-section__desc, .main-title__ico, .scroll-mouse').addClass('active');
-            }, 500);
-            setTimeout(function () {
-                $('body').addClass('load');
-            }, 1500);
-        });
+        //        $(window).on('load', function () {
+        //          $('.preloader').fadeOut(500);
+        //          setTimeout(function () {
+        //              $('.top-section__desc, .main-title__ico, .scroll-mouse').addClass('active');
+        //          }, 500);
+        //          setTimeout(function () {
+        //              $('body').addClass('load');
+        //          }, 1500);
+        //        });
     </script>
 
 
@@ -28,7 +28,21 @@
 <body>
 
 <div class="preloader">
-    здесь должен быть ваш прелоадер
+    <div class="preloader_inner">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title">WEBSTARS</div>
+        <div id="subtitle">
+
+            <span>DEVELOPMENT</span>
+            <span>WEB</span>
+            <span>STUDIO</span>
+            <svg class="inline-svg-icon preloader_star__logo">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star"></use>
+            </svg>
+        </div>
+    </div>
 </div>
 
 <aside class="anchor-aside">
@@ -2132,7 +2146,8 @@
         });
     })
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJhQdsHIIyi3DIyQbJEUdCRy3N3AYNi0s&callback=initMap" async defer ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJhQdsHIIyi3DIyQbJEUdCRy3N3AYNi0s&callback=initMap" async
+        defer></script>
 
 
 </body>
