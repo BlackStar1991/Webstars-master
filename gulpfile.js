@@ -51,6 +51,7 @@ gulp.task('watch', ['css-min', 'minjs','css-min-style', 'libjs', 'html'], functi
 
 gulp.task('libjs', function(){
 	return gulp.src([
+	'src/libs-js/wow.min.js',
     'src/libs-js/slick.min.js',
     'src/libs-js/auto-height.js'
 		
